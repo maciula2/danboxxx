@@ -12,6 +12,20 @@ docker compose up --build -d
 
 Open **http://localhost:8080**
 
+## Development 
+Run development server:
+```
+# terminal 1 — backend
+cd danboxxx/backend
+npm install
+node server.js
+
+# terminal 1 — frontend
+cd danboxxx/frontend
+npm install
+npm run dev
+```
+
 Components: `App` → `Sidebar`, `PostsView`, `UploadPage`, `TagsPage`  
 `PostsView` → `PostGrid`, `PostModal`, `SearchBar`, `ActiveTags`, `PageNav`  
 `PostModal` → `Comments`, `TagBadge`
@@ -45,3 +59,4 @@ Persisted via Docker volumes:
 - `uploads` → images + thumbnails
 
 Reset everything: `docker compose down -v`
+
