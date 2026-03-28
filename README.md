@@ -1,4 +1,4 @@
-# DanboXXXXX (React Edition)
+# DanboXXX (React Edition)
 
 Full-stack imageboard — Node.js/Express/SQLite backend + React frontend (CDN, no build step).
 
@@ -11,25 +11,6 @@ docker compose up --build -d
 ```
 
 Open **http://localhost:8080**
-
-## Stack
-
-| Layer | Tech |
-|-------|------|
-| Backend | Node.js + Express + SQLite (better-sqlite3) |
-| File processing | sharp (thumbnails, dimensions) |
-| Frontend | React 18 via CDN + Babel Standalone (no build step) |
-| Web server | Nginx (serves frontend, proxies /api → backend) |
-| Container | Docker Compose |
-
-## React Architecture
-
-All UI lives in `frontend/public/index.html` as a single-file React app using:
-
-- **Hooks only** — useState, useEffect, useCallback, useMemo, useRef
-- **No router** — simple `page` state string drives which component renders
-- **No Redux** — state lives in `App` and flows down via props
-- **Babel Standalone** — transpiles JSX in-browser, no build needed
 
 Components: `App` → `Sidebar`, `PostsView`, `UploadPage`, `TagsPage`  
 `PostsView` → `PostGrid`, `PostModal`, `SearchBar`, `ActiveTags`, `PageNav`  
