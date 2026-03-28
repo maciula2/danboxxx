@@ -20,7 +20,7 @@ cd danboxxx/backend
 npm install
 node server.js
 
-# terminal 1 — frontend
+# terminal 2 — frontend
 cd danboxxx/frontend
 npm install
 npm run dev
