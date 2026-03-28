@@ -30,4 +30,4 @@ app.get('/api/health', (_req, res) => {
   });
 });
 
-app.listen(PORT, () => console.log(`DanboXXXXX API on :${PORT}`));
+app.listen(PORT, () => console.log(`danboxxx API on :${PORT}`));

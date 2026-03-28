@@ -5,8 +5,8 @@ Full-stack imageboard.
 ## Quick Start
 
 ```bash
-unzip danboxxxxx-react.zip
-cd danboxxxxx-react
+unzip danboxxx-react.zip
+cd danboxxx-react
 docker compose up --build -d
 ```
 
