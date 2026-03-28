@@ -1,6 +1,6 @@
 # DanboXXX (React Edition)
 
-Full-stack imageboard — Node.js/Express/SQLite backend + React frontend (CDN, no build step).
+Full-stack imageboard. 
 
 ## Quick Start
 
